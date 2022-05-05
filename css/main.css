@@ -94,6 +94,7 @@ h1 {
 
 }
 
+
 .titulo-principal h1, h2{
     padding: 1%;
     margin: 1%;
@@ -107,14 +108,56 @@ h1 {
     display: grid;
     background-color: #fcfaf9;
     grid-template-columns: auto auto;
-
+   
 }
 
 .somos{
     background-color: white;
     text-align: center;
     border: 1px solid rgb(244, 237, 237);
+
+    transition: all .3s ease-in-out;
 }
+
+
+.somos:hover{
+    width: 100%;
+    background-color: #dd8fc0;
+}
+
+.etis-animacion{
+    animation-name: movimiento-uno;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes movimiento-uno{
+    0%{
+        width: 600px;
+        color: greenyellow;
+    }
+
+    25%{
+        width: 450px;
+        color: rgb(39, 215, 15);
+    }
+
+    75%{
+        width: 300px;
+        color: rgb(16, 150, 16);
+    }
+
+    100%{
+        width: 600px;
+        color: rgb(44, 244, 9);
+    }
+}
+
+
+
+
+
 
 .video{
     text-align: center;
@@ -236,6 +279,7 @@ header a{
     padding: 3px;
     font-style: oblique;
 }
+
  
 
 @media screen and (min-width:700px) {
